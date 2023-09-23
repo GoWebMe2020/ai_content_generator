@@ -7,11 +7,16 @@ This will act as a simple template that allows the user to make calls to and dis
 ## Technologies
 
 * Ruby on Rails
+* Devise
 * Bootstrap
 * VS Code
 * Google Chrome
 
 ## User Stories
+
+- [x] As a user, I would like to be able to register on the website with and email and a password.
+- [x] As a user, I would like to login and logout of the website.
+- [ ] As a user, I would like to make a start a chat and receive a response.
 
 ## Setup
 
@@ -38,3 +43,4 @@ This will act as a simple template that allows the user to make calls to and dis
 * https://www.youtube.com/watch?v=_3AsaXoLdj4&t=2646s
 * https://www.digitalocean.com/community/tutorials/how-to-set-up-ruby-on-rails-with-postgres
 * https://www.postgresqltutorial.com/postgresql-administration/postgresql-roles/
+* https://github.com/heartcombo/devise
