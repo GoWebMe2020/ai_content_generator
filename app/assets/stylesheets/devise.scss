@@ -1,0 +1,22 @@
+#login_form {
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 16px 0px #000000;
+    box-shadow: 5px 5px 16px 0px #000000;
+
+    div {
+      width: 80%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

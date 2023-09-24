@@ -1,4 +1,5 @@
 class ChatsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_chat, only: %i[ show edit update destroy ]
 
   # GET /chats or /chats.json
@@ -29,11 +30,6 @@ class ChatsController < ApplicationController
     api_response = @chat.generate_response(message_to_openai)
 
     @chat.chat_content = api_response
-
-    p " ================================================================================================ "
-    p "LOGGING THE CHAT PARAMS"
-    p @chat
-    p " ================================================================================================ "
 
     respond_to do |format|
       if @chat.valid?
