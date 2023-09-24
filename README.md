@@ -10,6 +10,7 @@ This will act as a simple template that allows the user to make calls to an AI p
 * Devise
 * RSpec
 * Dotenv
+* Ruby-OpenAI
 * Bootstrap
 * VS Code
 * Google Chrome
@@ -67,3 +68,4 @@ $ bundle exec rspec --help
 * https://github.com/heartcombo/devise
 * https://github.com/rspec/rspec-rails/tree/6-0-maintenance
 * https://github.com/bkeepers/dotenv
+* https://github.com/alexrudall/ruby-openai
