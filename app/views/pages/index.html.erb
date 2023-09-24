@@ -1,3 +1,17 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
-<%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+<div id="home_landing_page">
+  <section class="">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-5">
+      <h1 class="mt-5">Welcome to Your AI Content Generator</h1>
+      <p>Your AI-powered companion</p>
+      <a href="<%= new_chat_path %>" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p>&copy; 2023 Your AI Content Generator Application</p>
+    </div>
+  </footer>
+</div>
+

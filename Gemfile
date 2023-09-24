@@ -58,6 +58,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -73,3 +74,5 @@ end
 
 
 gem "devise", "~> 4.9"
+
+gem "ruby-openai", "~> 5.1"

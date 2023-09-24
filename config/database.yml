@@ -22,8 +22,8 @@ default: &default
 development:
   <<: *default
   database: ai_content_generator_development
-  username: ai_content_generator
-  password: postgres123456
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,8 +58,8 @@ development:
 test:
   <<: *default
   database: ai_content_generator_test
-  username: ai_content_generator
-  password: postgres123456
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: ai_content_generator_production
-  username: ai_content_generator
-  password: <%= ENV["AI_CONTENT_GENERATOR_DATABASE_PASSWORD"] %>
+  username: <%= ENV["POSTGRES_USERNAME"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
